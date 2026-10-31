@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0eb">
+  <meta name="description" content="A little love note, made just for you.">
+  <title>From me to you — a little love note</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="opening-scene" id="opening-scene" aria-label="Opening animation">
+      <div class="opening-sky" aria-hidden="true">
+        <span class="opening-orb orb-left"></span><span class="opening-orb orb-right"></span>
+        <span class="opening-star opening-star-one">✦</span><span class="opening-star opening-star-two">✧</span><span class="opening-star opening-star-three">✦</span>
+        <span class="opening-heart opening-heart-one">♥</span><span class="opening-heart opening-heart-two">♡</span><span class="opening-heart opening-heart-three">♥</span><span class="opening-heart opening-heart-four">♡</span>
+      </div>
+      <div class="opening-content">
+        <p class="opening-kicker">A LITTLE SOMETHING, JUST FOR YOU</p>
+        <div class="opening-envelope" aria-hidden="true">
+          <div class="envelope-letter"><span>For you,</span><b>with all my love</b><i>♥</i></div>
+          <div class="envelope-back"></div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="envelope-seal">♥</div>
+          <span class="envelope-spark spark-one">✦</span><span class="envelope-spark spark-two">✧</span>
+        </div>
+        <h2 class="opening-title">Made with love<span>.</span></h2>
+        <p class="opening-caption">just for your heart</p>
+        <button class="opening-skip" id="skip-opening" type="button">Skip intro <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <header class="topbar">
+      <a href="#home" class="brand" id="brand-home"><span class="brand-mark" aria-hidden="true">♥</span> little love note</a>
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="music-label">Music off</span></button>
+    </header>
+
+    <span class="decor decor-left" aria-hidden="true">✿</span>
+    <span class="decor decor-right" aria-hidden="true">♡</span>
+    <div class="confetti-layer" aria-hidden="true"></div>
+
+    <div class="content-wrap" id="home">
+      <button class="back-button" id="back-button" type="button" aria-label="Go to previous page" disabled>← <span id="back-label">A little surprise</span></button>
+      <div class="card">
+        <section class="step-content welcome" data-step="0" aria-labelledby="welcome-title">
+          <div class="rose" aria-hidden="true">✿</div>
+          <p class="eyebrow">A LITTLE SOMETHING, JUST FOR YOU</p>
+          <h1 id="welcome-title">From me to you<span class="gold-dot">.</span></h1>
+          <p class="lead">This is how much I love you.</p>
+          <div class="tiny-art" aria-hidden="true"><span>♡</span><i>✦</i><b>♡</b></div>
+          <button class="primary" type="button" data-next>Open your surprise <span aria-hidden="true">→</span></button>
+          <p class="soft-note">Made with all my heart</p>
+        </section>
+
+        <section class="step-content puzzle-step" data-step="1" aria-labelledby="puzzle-title" hidden>
+          <p class="eyebrow">A LITTLE GAME FOR YOU</p>
+          <h2 id="puzzle-title">Our little moments<span class="gold-dot">.</span></h2>
+          <p class="subline">Tap three photos that make you smile.</p>
+          <div class="photo-frame" role="group" aria-label="Photo gallery puzzle. Choose three favorite memories."></div>
+          <div class="game-status"><span id="game-count" aria-live="polite">0 of 3 found</span><span class="hearts" aria-label="Differences found"><span>♡</span><span>♡</span><span>♡</span></span></div>
+          <div class="actions">
+            <button class="text-button" id="try-again" type="button">↻ Try again</button>
+            <button class="text-button" id="show-me" type="button">Show me <span aria-hidden="true">✦</span></button>
+            <button class="text-button" type="button" data-next>Skip →</button>
+          </div>
+          <button class="primary" type="button" data-next>Keep going <span aria-hidden="true">→</span></button>
+        </section>
+
+        <section class="step-content bloom-step" data-step="2" aria-labelledby="bloom-title" hidden>
+          <p class="eyebrow">ONE LITTLE THING BEFORE YOUR NOTE</p>
+          <div class="bloom-scene" role="img" aria-label="A little flower grows and blooms in a warm garden">
+            <span class="bloom-glow"></span><span class="bloom-star star-a">✦</span><span class="bloom-star star-b">✧</span><span class="bloom-star star-c">✦</span>
+            <span class="bloom-heart bloom-heart-a">♥</span><span class="bloom-heart bloom-heart-b">♡</span>
+            <span class="bloom-stem"></span><span class="bloom-leaf leaf-left"></span><span class="bloom-leaf leaf-right"></span>
+            <span class="bloom-flower"><i class="petal petal-1"></i><i class="petal petal-2"></i><i class="petal petal-3"></i><i class="petal petal-4"></i><i class="petal petal-5"></i><i class="petal petal-6"></i><i class="flower-center"></i></span>
+            <span class="bloom-ground"></span>
+          </div>
+          <h2 id="bloom-title">You make my whole world bloom<span class="gold-dot">.</span></h2>
+          <p class="subline">Just one more little thing I wanted you to know.</p>
+          <div class="bloom-progress" aria-hidden="true"><span></span></div>
+          <button class="text-button skip-bloom" type="button" data-next>Skip to your note →</button>
+        </section>
+
+        <section class="step-content letter-step" data-step="3" aria-labelledby="letter-title" hidden>
+          <p class="eyebrow" id="letter-title">A NOTE FROM MY HEART</p>
+          <article class="letter">
+            <p>I don't think I tell you this enough, but meeting you has been one of the best things that's ever happened to me.</p>
+            <p>Thank you for being patient with me, making me laugh, listening to my endless talks, and loving me even on the days I'm difficult.</p>
+            <p>These past few months haven't always been easy, my love. We've faced some difficult days, but we've met them side by side—and I think we've come through them beautifully. Whatever comes next, I'll keep choosing us, again and again. Through it all, my love for you hasn't changed for a moment; it's as deep and true as ever. ❤️</p>
+            <p>No matter how busy life gets, I hope you always remember that being yours will always be my favourite place. 🥰</p>
+            <p>I love you more than these words can ever explain. ❤️</p>
+            <p class="signoff">— All my love</p>
+          </article>
+          <div class="message-reaction"><span class="avatar" aria-hidden="true">♥</span><span><b>Note from your favourite person</b><small>delivered with love</small></span><span class="reaction-heart" aria-hidden="true">♡</span></div>
+          <div class="emoji" aria-hidden="true">🥰</div>
+          <button class="primary" type="button" data-next>One last reason <span aria-hidden="true">→</span></button>
+        </section>
+
+        <section class="step-content reasons-step" data-step="4" aria-labelledby="reasons-title" hidden>
+          <p class="eyebrow">THE LITTLE THINGS ADD UP</p>
+          <h2 id="reasons-title">Tick the ones you’ll <span class="gold-dot">always</span> remember</h2>
+          <div class="checklist">
+            <p class="list-title">A FEW THINGS I LOVE ABOUT YOU</p>
+            <div id="reason-list"></div>
+            <div class="stamp" aria-hidden="true">ALL OF THEM<br><span>♥</span></div>
+          </div>
+          <p class="selection-note" id="selection-note" aria-live="polite">Pick any that feel like us.</p>
+          <a class="primary send-hug-link" href="love-you.html">Send me a hug <span aria-hidden="true">♥</span></a>
+        </section>
+      </div>
+      <nav class="progress" aria-label="Surprise steps"></nav>
+      <p class="footer-note">made with <span aria-hidden="true">♥</span> and a little bit of magic</p>
+    </div>
+  </main>
+</body>
+</html>
